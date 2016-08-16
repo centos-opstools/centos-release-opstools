@@ -3,29 +3,28 @@
 # Please see http://wiki.centos.org/SpecialInterestGroup/OpsTools for more
 # information
 
-[centos-opstools]
-name=CentOS-7 - OpsTools
-baseurl=http://mirror.centos.org/centos/7/opstools/$basearch/
-gpgcheck=1
-enabled=1
-gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-CentOS-SIG-OpsTools
-
-[centos-opstools-testing]
-name=CentOS-7 - OpsTools Testing
-baseurl=http://buildlogs.centos.org/centos/7/opstools7/$basearch/
+[centos-opstools-perfmon-testing]
+name=CentOS-7 - OpsTools Performance monitoring - testing repo
+baseurl=http://cbs.centos.org/repos/opstools7-perfmon-common-testing/$basearch/
 gpgcheck=0
-enabled=0
+enabled=1
+#gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-CentOS-SIG-OpsTools
 
-[centos-opstools-debuginfo]
-name=CentOS-7 - OpsTools - Debug
-baseurl=http://debuginfo.centos.org/centos/7/opstools7/$basearch/
-gpgcheck=1
-enabled=0
-gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-CentOS-SIG-OpsTools
+[centos-opstools-sensu-testing]
+name=CentOS-7 - OpsTools availability monitoring - testing repo
+baseurl=http://cbs.centos.org/repos/opstools7-sensu-common-testing/$basearch/
+gpgcheck=0
+enabled=1
+#gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-CentOS-SIG-OpsTools
 
-[centos-opstools-source]
-name=CentOS-7 - OpsTools - Source
-baseurl=http://vault.centos.org/centos/7/opstools7/Source/
-gpgcheck=1
-enabled=0
-gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-CentOS-SIG-OpsTools
+[centos-opstools-common-testing]
+name=CentOS-7 - OpsTools common testing
+baseurl=http://cbs.centos.org/repos/opstools7-common-common-testing/$basearch/
+gpgcheck=0
+enabled=1
+
+[centos-opstools-centralized-logging-testing]
+name=CentOS-7 - OpsTools centralized logging common testing
+baseurl=http://cbs.centos.org/repos/opstools7-elastic-common-testing/$basearch/
+gpgcheck=0
+enabled=1
