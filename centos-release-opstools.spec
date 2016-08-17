@@ -1,7 +1,7 @@
 Summary: Config to enable the repository for OpsTools SIG
 Name:    centos-release-opstools
 Version: 1
-Release: 1%{?dist}
+Release: 2%{?dist}
 License: GPL
 URL: http://wiki.centos.org/SpecialInterestGroup/OpsTools
 Source0: CentOS-OpsTools.repo
@@ -27,5 +27,8 @@ install -D -m 644 %{SOURCE0} %{buildroot}%{_sysconfdir}/yum.repos.d/CentOS-OpsTo
 #%{_sysconfdir}/pki/rpm-gpg
 
 %changelog
+* Wed Aug 17 2016 Matthias Runge <mrunge@redhat.com> - 1.2
+- fix repository location
+
 * Tue Aug 02 2016 Matthias Runge <mrunge@redhat.com> - 1.1
 - initial version
