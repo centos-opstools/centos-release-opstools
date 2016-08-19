@@ -9,4 +9,3 @@ baseurl=http://buildlogs.centos.org/centos/7/opstools/$basearch/
 gpgcheck=0
 enabled=1
 #gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-CentOS-SIG-OpsTools
-
