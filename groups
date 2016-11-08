@@ -1,5 +1,5 @@
-# UUID          Group Name
-False 	Non-Interactive Users
-f944b38c22baa583bc78b40ade4c387d3298db25       	centos-opstools/centos-release-opstools-core
-37bfbd2237fe03a4f25b81e64881cd15238e3b56        	centos-opstools/centos-release-opstools-ptl
-global:Registered-Users		Registered Users
+# UUID                                  	Group Name
+#
+757c85abcd9ba70f7b7b0fd5a0a43e7506f820c5	centos-opstools/ptl
+b60725751ff1c8f5f13106753f5233e2ea34f818	centos-opstools/core
+global:Registered-Users                 	Registered Users
