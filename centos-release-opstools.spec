@@ -1,7 +1,7 @@
 Summary: Config to enable the repository for OpsTools SIG
 Name:    centos-release-opstools
 Version: 1
-Release: 3%{?dist}
+Release: 4%{?dist}
 License: GPL
 URL: http://wiki.centos.org/SpecialInterestGroup/OpsTools
 Source0: CentOS-OpsTools.repo
@@ -9,7 +9,7 @@ Source0: CentOS-OpsTools.repo
 BuildArch: noarch
 
 Requires: centos-release
-Requires: centos-release-openstack-mitaka
+Requires: centos-release-openstack-newton
 
 %description
 yum configs for CentOS OpsTools SIG.
@@ -27,6 +27,9 @@ install -D -m 644 %{SOURCE0} %{buildroot}%{_sysconfdir}/yum.repos.d/CentOS-OpsTo
 #%{_sysconfdir}/pki/rpm-gpg
 
 %changelog
+* Fri Jan 13 2017 Matthias Runge <mrunge@redhat.com> - 1.4
+- depend on newton release
+
 * Fri Aug 26 2016 Matthias Runge <mrunge@redhat.com> - 1.3
 - temporarily enable pulling logging packages from cbs
 
