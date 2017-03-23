@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "fa98f980_0c48ab5a",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 1
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 85
+      },
+      "writtenOn": "2017-03-23T13:11:35Z",
+      "side": 1,
+      "message": "For the record, this was discussed at RDO meeting http://eavesdrop.openstack.org/meetings/rdo_meeting___2017_03_15/2017/rdo_meeting___2017_03_15.2017-03-15-15.01.html and raised at Opstools SIG meeting on Wed Mar 23",
+      "revId": "bc8afcc8005a3bdf696f998b9240c7cad308d00b",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
+    }
+  ]
+}
