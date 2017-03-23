@@ -1,15 +1,15 @@
 Summary: Config to enable the repository for OpsTools SIG
 Name:    centos-release-opstools
 Version: 1
-Release: 5%{?dist}
+Release: 7%{?dist}
 License: GPL
 URL: http://wiki.centos.org/SpecialInterestGroup/OpsTools
 Source0: CentOS-OpsTools.repo
+Source1: RPM-GPG-KEY-CentOS-SIG-OpsTools
 
 BuildArch: noarch
 
 Requires: centos-release
-Requires: centos-release-openstack-newton
 
 %description
 yum configs for CentOS OpsTools SIG.
@@ -18,15 +18,21 @@ yum configs for CentOS OpsTools SIG.
 
 %install
 install -D -m 644 %{SOURCE0} %{buildroot}%{_sysconfdir}/yum.repos.d/CentOS-OpsTools.repo
-#install -p -d %{buildroot}%{_sysconfdir}/pki/rpm-gpg
-#install -m 644 %{SOURCE1} %{buildroot}%{_sysconfdir}/pki/rpm-gpg
+install -p -d %{buildroot}%{_sysconfdir}/pki/rpm-gpg
+install -m 644 %{SOURCE1} %{buildroot}%{_sysconfdir}/pki/rpm-gpg
 
 %files
 %defattr(-,root,root)
 %config(noreplace) %{_sysconfdir}/yum.repos.d/*
-#%{_sysconfdir}/pki/rpm-gpg
+%{_sysconfdir}/pki/rpm-gpg/RPM-GPG-KEY-CentOS-SIG-OpsTools
 
 %changelog
+* Thu Mar 23 2017 Matthias Runge <mrunge@redhat.com> - 1.7
+- drop dependency on centos-openstack repos
+
+* Fri Feb 24 2017 Matthias Runge <mrunge@redhat.com> - 1.6
+- add gpg key for CentOS SIG OpsTools
+
 * Wed Jan 25 2017 Matthias Runge <mrunge@redhat.com> - 1.5
 - add opstools-release repo
 

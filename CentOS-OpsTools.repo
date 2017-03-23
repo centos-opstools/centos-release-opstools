@@ -7,19 +7,12 @@
 name=CentOS-7 - OpsTools - testing repo
 baseurl=http://buildlogs.centos.org/centos/7/opstools/$basearch/
 gpgcheck=0
-enabled=1
-#gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-CentOS-SIG-OpsTools
-#
-[centos-opstools-logging]
-name=CentOS-7 - OpsTools - logging testing repo
-baseurl=http://cbs.centos.org/repos/opstools7-elastic-common-testing/$basearch/os/
-gpgcheck=0
-enabled=1
+enabled=0
 
-[centos-opstools-release]
+[centos-release-opstools]
 name=CentOS-7 - OpsTools - release
-baseurl=https://mirror.centos.org/centos/$releasever/opstools/$basearch/
-gpgcheck=0
+baseurl=http://mirror.centos.org/centos/$releasever/opstools/$basearch/
+gpgcheck=1
 enabled=1
 skip_if_unavailable=1
-# gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-CentOS-SIG-OpsTools
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-CentOS-SIG-OpsTools
