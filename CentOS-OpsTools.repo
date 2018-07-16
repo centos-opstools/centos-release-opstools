@@ -11,7 +11,7 @@ enabled=0
 
 [centos-release-opstools]
 name=CentOS-7 - OpsTools - release
-baseurl=http://mirror.centos.org/centos/$releasever/opstools/$basearch/
+baseurl=http://mirror.centos.org/$contentdir/$releasever/opstools/$basearch/
 gpgcheck=1
 enabled=1
 skip_if_unavailable=1
