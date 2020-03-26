@@ -4,14 +4,14 @@
 # information
 
 [centos-opstools-testing]
-name=CentOS-7 - OpsTools - testing repo
-baseurl=http://buildlogs.centos.org/centos/7/opstools/$basearch/
+name=CentOS-8 - OpsTools - testing repo
+baseurl=http://buildlogs.centos.org/centos/$releasever/opstools/$basearch/
 gpgcheck=0
 enabled=0
 
 [centos-release-opstools]
-name=CentOS-7 - OpsTools - release
-baseurl=http://mirror.centos.org/$contentdir/$releasever/opstools/$basearch/
+name=CentOS-8 - OpsTools - release
+mirrorlist=http://mirror.centos.org/centos/$releasever/opstools/$basearch/
 gpgcheck=1
 enabled=1
 skip_if_unavailable=1
