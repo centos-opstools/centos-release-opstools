@@ -1,6 +1,6 @@
 How to build the package
 ========================
 
-rpmbuild -D 'dist .el7.centos' -bs centos-release-opstools.spec
+rpmbuild -D 'dist .el8.centos' -bs centos-release-opstools.spec
 
-cbs build core7-extras-common-el7.centos ~/rpmbuild/SRPMS/centos-release-opstools-1-7.el7.centos.src.rpm
+cbs build core8-extras-common-el8.centos ~/rpmbuild/SRPMS/centos-release-opstools-1-9.el8.centos.src.rpm
