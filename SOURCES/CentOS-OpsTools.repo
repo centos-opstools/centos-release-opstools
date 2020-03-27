@@ -9,7 +9,7 @@ baseurl=http://buildlogs.centos.org/centos/$releasever/opstools/$basearch/
 gpgcheck=0
 enabled=0
 
-[centos-release-opstools]
+[centos-opstools]
 name=CentOS-8 - OpsTools - collectd
 mirrorlist=http://mirrorlist.centos.org/?arch=$basearch&release=$releasever&repo=opstools-collectd-5
 gpgcheck=1
