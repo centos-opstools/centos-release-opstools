@@ -4,15 +4,15 @@
 # information
 
 [centos-opstools-testing]
-name=CentOS-8 - OpsTools - testing repo
-baseurl=https://buildlogs.centos.org/centos/$releasever/opstools/$basearch/collectd-5/
+name=CentOS-OpsTools - testing repo
+baseurl=https://buildlogs.centos.org/centos/$releasever-stream/opstools/$basearch/collectd-5/
 gpgcheck=0
 enabled=0
 
 [centos-opstools]
-name=CentOS-8 - OpsTools - collectd
-mirrorlist=http://mirrorlist.centos.org/?arch=$basearch&release=$releasever&repo=opstools-collectd-5
-#baseurl=http://mirror.centos.org/$contentdir/$releasever/opstools/$basearch/collectd-5/
+name=CentOS-OpsTools - collectd
+mirrorlist=http://mirrorlist.centos.org/?arch=$basearch&release=$releasever-stream&repo=opstools-collectd-5
+#baseurl=http://mirror.centos.org/$contentdir/$releasever-stream/opstools/$basearch/collectd-5/
 gpgcheck=1
 enabled=1
 skip_if_unavailable=1
